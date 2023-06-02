@@ -39,7 +39,6 @@ const Modal = ({ setIsOpen, name }) => {
             <p style={{ marginBottom: "-3px" }}>x</p>
           </button>
           <div className="modalContent">
-            Are you sure you want to delete the item?
             <div className="input-group">
               <input
                 required
