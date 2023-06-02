@@ -3,7 +3,6 @@ import "./MovieCard.css"
 import { Link } from "react-router-dom"
 
 const MovieCard = ({ show }) => {
-  console.log(show)
   const { image, name, genres, summary, language, id, status } = show.show
 
   const words = summary.split(" ")
@@ -19,9 +18,7 @@ const MovieCard = ({ show }) => {
         <p>Genre: {genresString}</p>
         <p>Language: {language}</p>
         <p>Status: {status}</p>
-        <Link to={`/shows/${id}`} className="card-action">
-          See Details
-        </Link>
+        <button className="card-action">See Details</button>
       </div>
     </Link>
   )
